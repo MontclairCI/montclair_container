@@ -1,5 +1,5 @@
 [package]
-name = "muzanci-image"
+name = "montclair_container"
 version = "0.1.0"
 edition = "2024"
 
@@ -14,7 +14,7 @@ serde_json = "1.0.151"
 serde_with = "3.21.0"
 sha2 = "0.11.0"
 strum = { version = "0.28.0", features = ["derive"] }
-muzanci-observability = { path = "../muzanci-observability" }
+montclair_observability = { git = "https://github.com/MontclairCI/montclair_observability.git" }
 thiserror = "2.0.19"
 tokio = { version = "1.53.1", features = ["io-util"] }
 tokio-util = { version = "0.7.19", features = ["io"] }
@@ -22,7 +22,7 @@ tracing = "0.1.44"
 url = "2.5.8"
 
 [lib]
-name = "muzanci_image"
+name = "montclair_container"
 path = "src/lib.rs"
 
 [lints.clippy]
